@@ -1,5 +1,9 @@
 # ZhuaTech Fam｜知华科技固定资产管理系统
 
+## 企业级资产生命周期治理
+
+新增资本化阈值、使用年限、账实核对、减值测试和处置授权控制，详见 [资产生命周期治理](docs/ENTERPRISE_ASSET_LIFECYCLE.md)。
+
 > 形成资产从取得到退出的全生命周期账实一致闭环
 
 [![Java 21](https://img.shields.io/badge/Java-21-315a70)](backend/pom.xml)
