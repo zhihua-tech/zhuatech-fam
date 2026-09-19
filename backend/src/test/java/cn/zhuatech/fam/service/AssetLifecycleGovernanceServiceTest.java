@@ -2,8 +2,14 @@
 package cn.zhuatech.fam.service;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 class AssetLifecycleGovernanceServiceTest {
     private final AssetLifecycleGovernanceService service = new AssetLifecycleGovernanceService();
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void allowsCapitalizationForControlledAsset() {
         var result = service.evaluate(new AssetLifecycleGovernanceService.Request(
                 "FA-001", 800_000, 500_000, 60, true, false, false, false, false));
@@ -11,6 +17,9 @@ class AssetLifecycleGovernanceServiceTest {
         assertEquals("CAPITALIZE", result.accountingTreatment());
         assertTrue(result.postingAllowed());
     }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void blocksUnauthorizedDisposalAndFlagsImpairment() {
         var result = service.evaluate(new AssetLifecycleGovernanceService.Request(
                 "FA-002", 900_000, 500_000, 48, false, true, false, true, false));
