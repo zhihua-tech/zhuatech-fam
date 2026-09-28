@@ -1,5 +1,7 @@
 # ZhuaTech Fam｜知华科技固定资产管理系统
 
+[简体中文](README.md) | [English](README.en.md)
+
 ## 企业级资产生命周期治理
 
 新增资本化阈值、使用年限、账实核对、减值测试和处置授权控制，详见 [资产生命周期治理](docs/ENTERPRISE_ASSET_LIFECYCLE.md)。
