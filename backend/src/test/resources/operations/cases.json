@@ -1,0 +1,49 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "depreciation": "#5000",
+      "bookValue": "#7000",
+      "netProceeds": "#7500",
+      "gainLoss": "#500"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "salePrice": "6000"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "gainLoss": "#-1500"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "usedMonths": "10"
+    },
+    "expected": {
+      "decision": "PASS",
+      "bookValue": "#2000"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "residual": "13000"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "usedMonths": "100"
+    },
+    "expected": {
+      "bookValue": "#2000"
+    },
+    "error": false
+  }
+]
